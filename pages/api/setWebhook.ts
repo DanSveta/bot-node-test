@@ -7,7 +7,7 @@ const token: string = '7210157855:AAGcyzGgMcfwibZS7W73PPqMkx5lSS3DJoc';
 const bot = new TelegramBot(token);
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
-  const url = `${process.env.NEXT_PUBLIC_URL}/api/telegram`;
+  const url = `https://bot-node-test-phi.vercel.app//api/telegram`;
 
   try {
     await bot.setWebHook(url);
