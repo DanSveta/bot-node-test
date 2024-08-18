@@ -2,8 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import TelegramBot from 'node-telegram-bot-api';
 
 // Replace with your Telegram bot token
-// const token = process.env.TELEGRAM_BOT_TOKEN!;
-const token: string = '7210157855:AAGcyzGgMcfwibZS7W73PPqMkx5lSS3DJoc';
+ const token = process.env.TELEGRAM_BOT_TOKEN!;
 
 const bot = new TelegramBot(token);
 
